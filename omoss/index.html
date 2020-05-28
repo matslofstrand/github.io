@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <title>Sött och Elegant</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/main.css">
+    <link href='https://fonts.googleapis.com/css?family=Caveat' rel='stylesheet'>
+
+</head>
+<body>
+<div class="headerBackground"></div>
+<header class="mainHeader">
+    <nav>
+
+        <div class="container">
+
+            <a href="/">
+                    <span class="logo">
+                        <h2 class="logo-text">Sött
+                            &
+                            Elegant
+                        </h2>
+                    </span>
+            </a>
+
+            <input type="checkbox" id="chk">
+            <label for="chk" class="show-menu-btn">
+                | | |
+
+            </label>
+
+            <ul class="navbar-items">
+                <a href="/meny">Meny</a>
+                <a href="/galleri">Galleri</a>
+                <a href="/tårtor">Tårtor</a>
+                <a href="/omoss">Om oss</a>
+                <label for="chk" class="hide-menu-btn">
+                    Stäng
+                </label>
+            </ul>
+        </div>
+    </nav>
+</header>
+<div class="col-8 col-s-10 mx-auto padding-tb-100 margin-tb-100">
+    <section class="section">
+        <form action="https://www.google.com/maps/embed/v1/directions" method="get" target="addriframe">
+            <table class="findus mx-auto">
+                <tr>
+                    <td>
+                        <label>Välj transport typ:</label>
+                    </td>
+                    <td>
+                        <select id="mode" name="mode" required>
+                            <option value="walking">Gå</option>
+                            <option value="transit">kollektivtrafik</option>
+                            <option value="driving">bil</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="odenplan">Sött & elegant Vasaplan:</label>
+                    </td>
+                    <td>
+                        <input checked type="radio"  id="odenplan" name="destination" value="Stockholm vasaplan"  required/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="vasaplan">Sött & elegant odenplan:</label>
+                    </td>
+                    <td>
+                        <input type="radio"  id="vasaplan" name="destination" value="Stockholm odenplan" required/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="origin">Ange adress att hitta hit från:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="origin" value="stureplan" required/>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input hidden name="key" value="AIzaSyA-XqNOhRl2YM6gm_Jg2hGhoyXEBjMqaYE">
+                        <input type="submit" value="Visa vägen" />
+                    </td>
+
+                </tr>
+
+            </table>
+
+        </form>
+        <br>
+        <iframe onload="iframe_load();" height="500px" width="100%" name="addriframe" src="https://www.google.com/maps/embed/v1/directions?key=AIzaSyA-XqNOhRl2YM6gm_Jg2hGhoyXEBjMqaYE&origin=stureplan&destination=vasaplan&mode=walking" allowfullscreen></iframe>
+    </section>
+</div>
+<footer>
+
+</footer>
+
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <title>Sött och Elegant</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/main.css">
+    <link href='https://fonts.googleapis.com/css?family=Caveat' rel='stylesheet'>
+
+</head>
+<body>
+<div class="headerBackground"></div>
+<header class="mainHeader">
+    <nav>
+
+            <div class="container">
+
+
+                <a href="/">
+                    <span class="logo">
+                        <h2 class="logo-text">Sött
+                            &
+                            Elegant
+                        </h2>
+                    </span>
+                </a>
+
+                <input type="checkbox" id="chk">
+                <label for="chk" class="show-menu-btn">
+                    | | |
+
+                </label>
+
+                <ul class="navbar-items">
+                    <a href="/meny">Meny</a>
+                    <a href="/galleri">Galleri</a>
+                    <a href="/tårtor">Tårtor</a>
+                    <a href="/omoss">Om oss</a>
+                    <label for="chk" class="hide-menu-btn">
+                        Stäng
+                    </label>
+                </ul>
+            </div>
+    </nav>
+</header>
+<div class="col-8 col-s-10 mx-auto padding-tb-100 margin-tb-100">
+        <section class="section">
+            <h2>Beställ din tårta</h2>
+            <p>Beskriv hur du vill ha din tårta så kontaktar vi dig.</p>
+            <form accept-charset="UTF-8" action="https://api.slapform.com/mats.lofstrand@gmail.com" autocomplete="off" method="GET" target="_blank">
+                <label for="datum">Datum för leverans: </label>
+                <input name="datum" type="date" value=""/> <br><br>
+                <textarea name="text" cols="100%" rows="10">Beskrivning</textarea><br>
+                <button type="submit" value="Submit">Beställ</button>
+            </form>
+        </section>
+</div>
+<footer>
+
+</footer>
+
+
+</body>
+</html>
